@@ -7,4 +7,4 @@ for i in range(4):
     narr[1].append((arr[0][i] + arr[1][i]) / 2)
 for i in range(2):
     print(*narr[i], sep = ' ')
-print((narr[0][0] + narr[0][1]) / 2)
+print(f'{(narr[0][0] + narr[0][1]) / 2:.1f}')
