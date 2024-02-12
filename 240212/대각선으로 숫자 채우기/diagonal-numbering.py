@@ -1,16 +1,20 @@
 n, m = map(int, input().split())
+
 arr = [[0 for _ in range(m)] for _ in range(n)]
 sum_val = 1
 arr[0][0] = sum_val
 i, j,k = 0, 0,0
+
 while True:
     # print(i, j, sum_val)
-    if i == n - 1 and j == m - 2:
+    if i == n -1 and j == m -1 :
+        # print("6들어옴")
+        break
+    elif i == n - 1 and j == m - 2:
         # print("1들어옴")
         j += 1
         sum_val += 1
         arr[i][j] = sum_val
-     
         break
     elif j - 1 <0 and arr[0][m-1] > 0 or arr[0][m-1]>0 and i == n -1:
         # print("4들어옴")
@@ -38,11 +42,9 @@ while True:
         sum_val += 1
 
         arr[i][j] = sum_val
-        
+       
 
         
-
-
 for i in range(n):
     print(*arr[i], sep = ' ')
      
