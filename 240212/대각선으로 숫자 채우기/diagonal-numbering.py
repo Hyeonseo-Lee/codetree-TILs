@@ -29,6 +29,10 @@ while True:
         i = 0
         sum_val += 1
         arr[i][j] = sum_val
+    elif n == 1:
+        j = j + 1
+        sum_val += 1
+        arr[i][j] = sum_val
     elif i == n - 1 and arr[i][j] > 0:
         # print("5들어옴")
         i = 0
