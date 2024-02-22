@@ -8,7 +8,7 @@ for _ in range(k):
 
 max_val = arr[0]
 
-for i in range(k):
+for i in range(n):
     if arr[i] > max_val:
         max_val = arr[i]
 print(max_val)
