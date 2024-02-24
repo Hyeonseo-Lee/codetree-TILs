@@ -20,7 +20,7 @@ for i in range(2001):
                 
                 max_yval = j
 #print(min_xval, max_xval, min_yval, max_yval)
-if max_xval >= min_xval and max_yval >= min_xval:
+if max_xval >= min_xval and max_yval >= min_yval:
     print((max_xval - min_xval + 1) * (max_yval - min_yval + 1)) 
 else:
     print(0)
