@@ -16,7 +16,7 @@ for i in range(2001):
                 min_yval = j
             if  i > max_xval:
                 max_xval = i
-            if j > min_yval:
+            if j > max_yval:
                 
                 max_yval = j
 #print(min_xval, max_xval, min_yval, max_yval)
