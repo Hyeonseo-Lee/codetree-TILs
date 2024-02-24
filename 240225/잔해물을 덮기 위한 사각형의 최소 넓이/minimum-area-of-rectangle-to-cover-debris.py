@@ -9,11 +9,15 @@ min_xval, max_xval, min_yval, max_yval = 2000, 0, 2000, 0
 for i in range(2001):
     for j in range(2001):
         if arr[i][j] == 1:
-            if i < min_xval and j < min_yval:
+            if i < min_xval:
                 min_xval = i
+            if j < min_yval:
+                
                 min_yval = j
-            if  i > max_xval and j > min_yval:
+            if  i > max_xval:
                 max_xval = i
+            if j > min_yval:
+                
                 max_yval = j
 #print(min_xval, max_xval, min_yval, max_yval)
 print((max_xval - min_xval + 1) * (max_yval - min_yval + 1))
