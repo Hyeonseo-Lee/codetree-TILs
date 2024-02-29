@@ -1,5 +1,5 @@
 n, m = map(int, input().split())
-a_arr, b_arr = [0] * 1001, [0] * 1001
+a_arr, b_arr = [0] * 2000, [0] * 2000
 
 def findtime(nm, arr):
     start, place = 0, 0
