@@ -21,7 +21,9 @@ def findtime(nm, arr):
 findtime(n, a_arr)
 findtime(m, b_arr)
 
-for i in range(1, 1001):
-    if a_arr[i] == b_arr[i]:
-        print(i)
+ans = -1
+for i in range(1001):
+    if a_arr[i] != 0 and a_arr[i] == b_arr[i]:
+        ans = i
         break
+print(ans)
