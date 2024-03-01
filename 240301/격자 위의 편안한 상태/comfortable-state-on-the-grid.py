@@ -10,9 +10,9 @@ for _ in range(m):
     for i, j in zip(dxs, dys):
         nx, ny = r + i - 1, c + j -1
         if is_number(nx, ny):
-            if arr[r + i - 1][c + j - 1] == 1:
+            if arr[nx][ny] == 1:
                 cnt += 1
-            if cnt == 3:
-                ans = 1
-                break
+        if cnt == 3:
+            ans = 1
+            break
     print(ans)
