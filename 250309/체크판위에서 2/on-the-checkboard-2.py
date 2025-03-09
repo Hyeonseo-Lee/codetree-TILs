@@ -1,16 +1,16 @@
 a, b = map(int, input().split())
-grid = [list(input().split()) for _ in range(b)]
+grid = [list(input().split()) for _ in range(a)]
 cnt = 0
 answer = 0
 
-for i in range(1, b-1):
-    for j in range(1, a-1):
-        for k in range(i+1, b-1):
-            for g in range(j+1, a-1):
-                if grid[i][j] != grid[k][g]:
+for i in range(a):
+    for j in range(b):
+        for k in range(i+1, a):
+            for g in range(j+1, b):
+                  
+                if grid[i][j] != grid[0][0] and grid[k][g] != grid[i][j] and grid[k][g] != grid[a-1][b-1]:
                     cnt += 1
-                if cnt == 2:
-                    answer += 1
-                    break
+                    #print(i,j,grid[i][j],k,g,grid[k][g],h,s,grid[h][s],cnt)
+                            
 
-print(answer)
+print(cnt)
