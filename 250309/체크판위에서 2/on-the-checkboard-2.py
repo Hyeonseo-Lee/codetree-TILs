@@ -3,8 +3,8 @@ grid = [list(input().split()) for _ in range(a)]
 cnt = 0
 answer = 0
 
-for i in range(a):
-    for j in range(b):
+for i in range(1, a):
+    for j in range(1, b):
         for k in range(i+1, a-1):
             for g in range(j+1, b-1):
                   
